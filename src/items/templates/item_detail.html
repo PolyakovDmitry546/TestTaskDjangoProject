@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <div id="buy-url" hidden>{% url 'buy-view' item.id %}</div>
     <p>Id: {{ item.id }}</p>
     <p>Name: {{ item.name }}</p>
     <p>Description: {{ item.description }}</p>
