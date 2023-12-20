@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.views.generic import DetailView
 
-# Create your views here.
+from items.models import Item
+
+
+class ItemView(DetailView):
+    """Представление модели Item"""
+    model = Item
+    template_name = 'item_detail.html'
+    context_object_name = 'item'
