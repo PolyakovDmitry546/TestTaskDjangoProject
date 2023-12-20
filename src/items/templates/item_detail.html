@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>Id: {{ item.id }}</p>
+    <p>Name: {{ item.name }}</p>
+    <p>Description: {{ item.description }}</p>
+    <p>Price: {{ item.price }}</p>
+    <input type="button" value="buy" id="buy-button">
+{% endblock %}
