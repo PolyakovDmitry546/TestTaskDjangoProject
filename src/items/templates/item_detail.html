@@ -5,6 +5,6 @@
     <p>Id: {{ item.id }}</p>
     <p>Name: {{ item.name }}</p>
     <p>Description: {{ item.description }}</p>
-    <p>Price: {{ item.price }}</p>
+    <p>Price: {{ item.price|stringformat:"i"|slice:":-2" }}.{{ item.price|stringformat:"i"|slice:"-2:" }}</p>
     <input type="button" value="buy" id="buy-button">
 {% endblock %}
