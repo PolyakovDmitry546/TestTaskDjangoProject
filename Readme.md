@@ -4,6 +4,9 @@
     - GET /buy/{id};
     - GET /item/{id};
 - Добавлен Dockerfile для сборки проекта
-- Используются Запуск environment variables
+- Используются environment variables:
+    - STRIPE_SECRET_KEY
+    - STRIPE_PUBLIC_KEY
+    - SECRET_KEY
 - Добавлен просмотр модели Item в Django Admin панели
 
