@@ -1,4 +1,5 @@
-stripe = Stripe('pk_test_51OPNm2Ahth7NeWYb2fIJvnsPt03uD6TVcIlCYY9shN0mVyOkSpJpzxS64YWCfuOZTHpeU4wDsFD56yHU2U6EIhkq00UrzBATU7')
+const stripe_public_key = JSON.parse(document.getElementById('stripe-public-key').textContent);
+stripe = Stripe(stripe_public_key)
 const buy_button = document.getElementById("buy-button");
 
 function getStripeSessionId() {

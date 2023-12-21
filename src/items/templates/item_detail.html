@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+    {{ stripe_public_key|json_script:"stripe-public-key" }}
     <div id="buy-url" hidden>{% url 'buy-view' item.id %}</div>
     <p>Id: {{ item.id }}</p>
     <p>Name: {{ item.name }}</p>
